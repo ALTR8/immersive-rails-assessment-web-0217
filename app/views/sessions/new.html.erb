@@ -1,0 +1,8 @@
+<h1>Welcome! Sign Into Your Late Show Account</h1>
+<%= form_for @user, url: signin_path, method: :post do |f| %><%=f.label :username %>
+	<%=f.text_field :username %>
+	<%=f.label :password %>
+	<%=f.password_field :password %>
+	<%=f.submit "Log In"%>
+<%end%>
+
